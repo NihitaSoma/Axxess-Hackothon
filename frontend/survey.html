@@ -24,7 +24,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">DermaFind</a>
+          <a class="navbar-brand" href="#"><img src="logo name slogan.png" alt="DermaFind" style="width: 150px; height: auto;"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
       <br>
       <div class="homeTitle">
         <h1 id="homeName"> DermaFind</h1>
@@ -355,13 +355,15 @@
         const inputs = form.querySelectorAll('input[type="radio"]:checked');
         inputs.forEach(input => userResponses.push(input.value)); // Collect the value attribute
 
-        console.log(userResponses)
-        // Call determineSkinCondition to determine the skin condition based on user responses
+        // Determine skin conditions based on user responses
         const skinConditions = determineSkinCondition(userResponses);
-        // Display or process the results as needed
-        document.write(skinConditions); 
-        content = skinConditions// For example, log the results to the console
-        outputDiv.innerHTML = content;
+        
+        // Construct the URL with query parameters
+        const queryParams = new URLSearchParams();
+        queryParams.append('conditions', skinConditions.join(',')); // Convert array to comma-separated string
+        
+        // Redirect the user to result.html with query parameters
+        window.location.href = 'result.html?' + queryParams.toString();
    }
 </script>
 
