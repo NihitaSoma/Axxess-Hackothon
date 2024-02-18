@@ -2,7 +2,7 @@
 function Footer(){
     return(
         <footer>
-            <p>&copy; {new Date().getFullYear()} dermafind</p>
+            <p>&copy; {new Date().getFullYear()} Dermafind</p>
         </footer>
 
     );
