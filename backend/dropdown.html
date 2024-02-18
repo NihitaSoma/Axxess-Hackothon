@@ -53,7 +53,7 @@
     </head>
 
     <body>
-        <h2>Select an Image:</h2>
+        <h2>Upload an Image:</h2>
         <select id="file" onchange="showSelectedValue()">
             <option value="No skin conditions detected">image 1</option>
             <option value="Lichen planus and related diseases">image 2</option>
@@ -75,10 +75,27 @@
                 // Get a reference to the output div
                 var outputDiv = document.getElementById('output');
 
-                // Update the content of the output div
-                outputDiv.textContent = 'You selected: ' + selectedOption;
-
-
+                // Update the content of the output div based on the selected option
+                switch (selectedOption) {
+                    case 'No skin conditions detected':
+                        outputDiv.textContent = 'Your skin is healthy! Make sure you keep on wearing your sunscreen!';
+                        break;
+                    case 'Lichen planus and related diseases':
+                        outputDiv.textContent = 'You have Lichen planus and some related disease. Your body will appear to have white patches and discolored and purple dots';
+                        break;
+                    case 'Melanoma skin cancer mole':
+                        outputDiv.textContent = 'You have Melanoma skin cancer mole.Visit the Dermatologist immediately!';
+                        break;
+                    case 'Lupus and other connective tissue diseases':
+                        outputDiv.textContent = 'You have Lupus and other connective tissue diseases.This is a chronic disease that causes inflammation';
+                        break;
+                    case 'Infestation and bite disease':
+                        outputDiv.textContent = 'You have Infestation and bite disease.The area of the bite should red and swollen and should hurt or feel hot when touched.';
+                        break;
+                    default:
+                        outputDiv.textContent = 'Please select an option.';
+                        break;
+                }
             }
         </script>
     </body>
