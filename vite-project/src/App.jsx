@@ -7,6 +7,8 @@ function App() {
   
   return(
     <div>
+
+      style = {{maxWidth}}
     <Header/>
     <Footer/>
     </div>
