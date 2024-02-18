@@ -1,0 +1,71 @@
+/* Tags */
+body {
+    font-family: 'Ezcar', sans-serif; 
+    margin: 100px;
+    padding: 0;
+    background-color: #87A3B5; 
+}
+
+/* Classes */
+/* Home Page */
+.homeTitle{
+    width: 100%;
+    height: 20%;
+    padding-top: 13%;
+    padding-bottom: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #FFE7D6;
+    color: #070000
+}
+
+/* IDs */
+/* Home Page */
+#homeName{
+    text-align: center;
+}
+
+#aboutus{
+    margin-top: 20px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fffffff2;
+}
+
+#loginSignupForm{
+    margin-top: 20px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fffffff2;
+}
+
+#loginEmail{
+    margin-bottom: 2%;
+}
+#loginPassword{
+    margin-bottom: 2%;
+}
+
+#signUpAcc{
+    margin-top: 2%;
+}
+
+.title{
+    margin-top: 20px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fffffff2;
+    text-align: center;
+}
+
+#titleblock{
+    background-color: #fffffff2;
+    padding-bottom: 2%;
+    text-align:center;
+}
