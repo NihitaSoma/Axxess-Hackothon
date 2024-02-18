@@ -1,154 +1,164 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <style>
-      .navbar-brand {
-          background-color: #FFE7D6;
-          padding: 10px 15px;
-          border-radius: 15px;
-          color: #87A3B5; /* Font color */
-      }
-  </style>
+        .navbar-brand {
+            background-color: #FFE7D6;
+            padding: 10px 15px;
+            border-radius: 15px;
+            color: #87A3B5;
+            /* Font color */
+        }
+    </style>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">DermaFind</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="survey.html">Survey</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">DermaFind</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="survey.html">Survey</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-      <br>
-      <div class="homeTitle">
+    </nav>
+    <br>
+    <div class="homeTitle">
         <h1 id="homeName"> DermaFind</h1>
         <div id="caption">
-          <p> 
-            Discover your skin's secrets by taking the quiz below! </p>
-        <br>
-    
-        <div class="container">
-            <h2>DermaFind Skin Concern Quiz</h2>
-            <!-- Question 1: Chronic Itching-->
-            <form id="skinQuiz">
-                <div class="question">
-                    <p>Do you experience chronic itching?</p>
-                    <label>
-                      <input type="radio" name="chronic_itching" value="yes"> Yes
-                    </label>
-                    <label>
-                      <input type="radio" name="chronic_itching" value="no"> No
-                    </label>
-                  </div>
-                <hr>
-                <!-- Question 2: Redness and inflammation -->
-                <div class="question">
-                    <p>Do you have redness and inflammation on your skin?</p>
-                    <label>
-                    <input type="radio" name="redness_inflammation" value="yes"> Yes
-                    </label>
-                    <label>
-                    <input type="radio" name="redness_inflammation" value="no"> No
-                    </label>
-                </div>
-                <hr>
-                <!-- Question 3: Dry, scaly patches -->
-                <div>
-                    <label>Do you have dry, scaly patches?</label><br>
-                    <input type="radio" id="dryScalyPatchesYes" name="dry_scaly_patches" value="yes">
-                    <label for="dryScalyPatchesYes">Yes</label><br>
-                    <input type="radio" id="dryScalyPatchesNo" name="dry_scaly_patches" value="no">
-                    <label for="dryScalyPatchesNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 4: Family history of eczema or other allergic conditions -->
-                <div>
-                    <label>Do you have a family history of eczema or other allergic conditions?</label><br>
-                    <input type="radio" id="familyHistoryYes" name="family_history" value="yes">
-                    <label for="familyHistoryYes">Yes</label><br>
-                    <input type="radio" id="familyHistoryNo" name="family_history" value="no">
-                    <label for="familyHistoryNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 5: Flare-ups triggered by certain irritants or allergens -->
-                <div>
-                    <label>Are flare-ups triggered by certain irritants or allergens?</label><br>
-                    <input type="radio" id="flareUpsYes" name="flare_ups" value="yes">
-                    <label for="flareUpsYes">Yes</label><br>
-                    <input type="radio" id="flareUpsNo" name="flare_ups" value="no">
-                    <label for="flareUpsNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 6: Thick, red patches covered with silvery scales -->
-                <div>
-                    <label>Do you have thick, red patches covered with silvery scales?</label><br>
-                    <input type="radio" id="thickRedPatchesYes" name="thick_red_patches" value="yes">
-                    <label for="thickRedPatchesYes">Yes</label><br>
-                    <input type="radio" id="thickRedPatchesNo" name="thick_red_patches" value="no">
-                    <label for="thickRedPatchesNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 7: Itching, burning, or soreness -->
-                <div>
-                    <label>Do you experience itching, burning, or soreness?</label><br>
-                    <input type="radio" id="itchingBurningSorenessYes" name="itching_burning_soreness" value="yes">
-                    <label for="itchingBurningSorenessYes">Yes</label><br>
-                    <input type="radio" id="itchingBurningSorenessNo" name="itching_burning_soreness" value="no">
-                    <label for="itchingBurningSorenessNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 8: Nail changes (pitting, thickening, discoloration) -->
-                <div>
-                    <label>Do you have nail changes such as pitting, thickening, or discoloration?</label><br>
-                    <input type="radio" id="nailChangesYes" name="nail_changes" value="yes">
-                    <label for="nailChangesYes">Yes</label><br>
-                    <input type="radio" id="nailChangesNo" name="nail_changes" value="no">
-                    <label for="nailChangesNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 9: Joint pain or swelling (psoriatic arthritis) -->
-                <div>
-                    <label>Do you experience joint pain or swelling (psoriatic arthritis)?</label><br>
-                    <input type="radio" id="jointPainSwellingYes" name="joint_pain_swelling" value="yes">
-                    <label for="jointPainSwellingYes">Yes</label><br>
-                    <input type="radio" id="jointPainSwellingNo" name="joint_pain_swelling" value="no">
-                    <label for="jointPainSwellingNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 10: Triggers such as stress, infections, or certain medications -->
-                <div>
-                    <label>Are there triggers such as stress, infections, or certain medications?</label><br>
-                    <input type="radio" id="triggersYes" name="triggers" value="yes">
-                    <label for="triggersYes">Yes</label><br>
-                    <input type="radio" id="triggersNo" name="triggers" value="no">
-                    <label for="triggersNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 11: Blackheads, whiteheads, or pimples -->
-                <div>
-                    <label>Do you have blackheads, whiteheads, or pimples?</label><br>
-                    <input type="radio" id="blackheadsWhiteheadsPimplesYes" name="blackheads_whiteheads_pimples" value="yes">
-                    <label for="blackheadsWhiteheadsPimplesYes">Yes</label><br>
-                    <input type="radio" id="blackheadsWhiteheadsPimplesNo" name="blackheads_whiteheads_pimples" value="no">
-                    <label for="blackheadsWhiteheadsPimplesNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 12: Inflammation and redness
+            <p>
+                Discover your skin's secrets by taking the quiz below! </p>
+            <br>
+
+            <div class="container">
+                <h2>DermaFind Skin Concern Quiz</h2>
+                <!-- Question 1: Chronic Itching-->
+                <form id="skinQuiz">
+                    <div class="question">
+                        <p>Do you experience chronic itching?</p>
+                        <label>
+                            <input type="radio" name="chronic_itching" value="yes"> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="chronic_itching" value="no"> No
+                        </label>
+                    </div>
+                    <hr>
+                    <!-- Question 2: Redness and inflammation -->
+                    <div class="question">
+                        <p>Do you have redness and inflammation on your skin?</p>
+                        <label>
+                            <input type="radio" name="redness_inflammation" value="yes"> Yes
+                        </label>
+                        <label>
+                            <input type="radio" name="redness_inflammation" value="no"> No
+                        </label>
+                    </div>
+                    <hr>
+                    <!-- Question 3: Dry, scaly patches -->
+                    <div>
+                        <label>Do you have dry, scaly patches?</label><br>
+                        <input type="radio" id="dryScalyPatchesYes" name="dry_scaly_patches" value="yes">
+                        <label for="dryScalyPatchesYes">Yes</label><br>
+                        <input type="radio" id="dryScalyPatchesNo" name="dry_scaly_patches" value="no">
+                        <label for="dryScalyPatchesNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 4: Family history of eczema or other allergic conditions -->
+                    <div>
+                        <label>Do you have a family history of eczema or other allergic conditions?</label><br>
+                        <input type="radio" id="familyHistoryYes" name="family_history" value="yes">
+                        <label for="familyHistoryYes">Yes</label><br>
+                        <input type="radio" id="familyHistoryNo" name="family_history" value="no">
+                        <label for="familyHistoryNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 5: Flare-ups triggered by certain irritants or allergens -->
+                    <div>
+                        <label>Are flare-ups triggered by certain irritants or allergens?</label><br>
+                        <input type="radio" id="flareUpsYes" name="flare_ups" value="yes">
+                        <label for="flareUpsYes">Yes</label><br>
+                        <input type="radio" id="flareUpsNo" name="flare_ups" value="no">
+                        <label for="flareUpsNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 6: Thick, red patches covered with silvery scales -->
+                    <div>
+                        <label>Do you have thick, red patches covered with silvery scales?</label><br>
+                        <input type="radio" id="thickRedPatchesYes" name="thick_red_patches" value="yes">
+                        <label for="thickRedPatchesYes">Yes</label><br>
+                        <input type="radio" id="thickRedPatchesNo" name="thick_red_patches" value="no">
+                        <label for="thickRedPatchesNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 7: Itching, burning, or soreness -->
+                    <div>
+                        <label>Do you experience itching, burning, or soreness?</label><br>
+                        <input type="radio" id="itchingBurningSorenessYes" name="itching_burning_soreness" value="yes">
+                        <label for="itchingBurningSorenessYes">Yes</label><br>
+                        <input type="radio" id="itchingBurningSorenessNo" name="itching_burning_soreness" value="no">
+                        <label for="itchingBurningSorenessNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 8: Nail changes (pitting, thickening, discoloration) -->
+                    <div>
+                        <label>Do you have nail changes such as pitting, thickening, or discoloration?</label><br>
+                        <input type="radio" id="nailChangesYes" name="nail_changes" value="yes">
+                        <label for="nailChangesYes">Yes</label><br>
+                        <input type="radio" id="nailChangesNo" name="nail_changes" value="no">
+                        <label for="nailChangesNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 9: Joint pain or swelling (psoriatic arthritis) -->
+                    <div>
+                        <label>Do you experience joint pain or swelling (psoriatic arthritis)?</label><br>
+                        <input type="radio" id="jointPainSwellingYes" name="joint_pain_swelling" value="yes">
+                        <label for="jointPainSwellingYes">Yes</label><br>
+                        <input type="radio" id="jointPainSwellingNo" name="joint_pain_swelling" value="no">
+                        <label for="jointPainSwellingNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 10: Triggers such as stress, infections, or certain medications -->
+                    <div>
+                        <label>Are there triggers such as stress, infections, or certain medications?</label><br>
+                        <input type="radio" id="triggersYes" name="triggers" value="yes">
+                        <label for="triggersYes">Yes</label><br>
+                        <input type="radio" id="triggersNo" name="triggers" value="no">
+                        <label for="triggersNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 11: Blackheads, whiteheads, or pimples -->
+                    <div>
+                        <label>Do you have blackheads, whiteheads, or pimples?</label><br>
+                        <input type="radio" id="blackheadsWhiteheadsPimplesYes" name="blackheads_whiteheads_pimples"
+                            value="yes">
+                        <label for="blackheadsWhiteheadsPimplesYes">Yes</label><br>
+                        <input type="radio" id="blackheadsWhiteheadsPimplesNo" name="blackheads_whiteheads_pimples"
+                            value="no">
+                        <label for="blackheadsWhiteheadsPimplesNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 12: Inflammation and redness
                 <div>
                     <label>Do you have inflammation and redness?</label><br>
                     <input type="radio" id="inflammationRednessYes" name="inflammation_redness" value="yes">
@@ -157,30 +167,30 @@
                     <label for="inflammationRednessNo">No</label><br>
                 </div>
                 <hr> -->
-                <!-- Question 13: Oily skin -->
-                <div>
-                    <label>Do you have oily skin?</label><br>
-                    <input type="radio" id="oilySkinYes" name="oily_skin" value="yes">
-                    <label for="oilySkinYes">Yes</label><br>
-                    <input type="radio" id="oilySkinNo" name="oily_skin" value="no">
-                    <label for="oilySkinNo">No</label><br>
-                </div>
-                <hr>
-                <!-- Question 14: Breakouts typically occur on the face, neck, chest, and back -->
-                <div>
-                    <label>Do breakouts typically occur on the face, neck, chest, and back?</label><br>
-                    <input type="radio" id="breakoutsAreasYes" name="breakouts_areas" value="yes">
-                    <label for="breakoutsAreasYes">Yes</label><br>
-                    <input type="radio" id="breakoutsAreasNo" name="breakouts_areas" value="no">
-                    <label for="breakoutsAreasNo">No</label><br>
-                </div>
-                <hr>
-                <button type="button" onclick="submitSurvey()" class="btn btn-primary">Submit</button>
-            </form>
-            <div id="result" class="mt-3"></div>
+                    <!-- Question 13: Oily skin -->
+                    <div>
+                        <label>Do you have oily skin?</label><br>
+                        <input type="radio" id="oilySkinYes" name="oily_skin" value="yes">
+                        <label for="oilySkinYes">Yes</label><br>
+                        <input type="radio" id="oilySkinNo" name="oily_skin" value="no">
+                        <label for="oilySkinNo">No</label><br>
+                    </div>
+                    <hr>
+                    <!-- Question 14: Breakouts typically occur on the face, neck, chest, and back -->
+                    <div>
+                        <label>Do breakouts typically occur on the face, neck, chest, and back?</label><br>
+                        <input type="radio" id="breakoutsAreasYes" name="breakouts_areas" value="yes">
+                        <label for="breakoutsAreasYes">Yes</label><br>
+                        <input type="radio" id="breakoutsAreasNo" name="breakouts_areas" value="no">
+                        <label for="breakoutsAreasNo">No</label><br>
+                    </div>
+                    <hr>
+                    <button type="button" onclick="submitSurvey()" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="result" class="mt-3"></div>
+            </div>
         </div>
     </div>
-</div>
 </body>
 
 <script>
@@ -283,7 +293,7 @@
             }
         }
 
-       
+
     ];
 
 
@@ -316,7 +326,7 @@
             // Check if all criteria for the condition are met
             console.log(condition.criteria)
             console.log(userResponses)
-            for(let i = 0; i < userResponses.length; i++){
+            for (let i = 0; i < userResponses.length; i++) {
                 const keys = Object.keys(mappedQuestions)
                 mappedQuestions[keys[i]] = userResponses[i]
             }
@@ -349,10 +359,10 @@
         // Call determineSkinCondition to determine the skin condition based on user responses
         const skinConditions = determineSkinCondition(userResponses);
         // Display or process the results as needed
-        document.write(skinConditions); 
+        document.write(skinConditions);
         content = skinConditions// For example, log the results to the console
         outputDiv.innerHTML = content;
-   }
+    }
 </script>
 
 </html>

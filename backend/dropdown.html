@@ -53,7 +53,7 @@
     </head>
 
     <body>
-        <h2>Select a Fruit:</h2>
+        <h2>Select an Image:</h2>
         <select id="file" onchange="showSelectedValue()">
             <option value="No skin conditions detected">image 1</option>
             <option value="Lichen planus and related diseases">image 2</option>
@@ -77,6 +77,9 @@
 
                 // Update the content of the output div
                 outputDiv.textContent = 'You selected: ' + selectedOption;
+                if (selectedOption == "No skin conditions detected")
+                    outputDiv.text = "Your skin is perfectly healthy!"
+
             }
         </script>
     </body>
