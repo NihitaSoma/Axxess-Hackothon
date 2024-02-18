@@ -3,7 +3,7 @@ function Header(){
 
     return(
         <header>
-            <h1>DermaFind</h1>
+            <h1>dermafind</h1>
             <nav>
                 <u1>
                     <li> <a href ="#">Home</a></li>
