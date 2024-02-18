@@ -31,10 +31,6 @@
                 <a class="nav-link" href="survey.html">Survey</a>
               </li>
             </ul>
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
       </nav>
@@ -45,5 +41,95 @@
           <p> 
             Discover your skin's secrets by taking the quiz below! </p>
         <br>
+    
+        <div class="container">
+            <h2>DermaFind Skin Concern Quiz</h2>
+            <form id="skinQuiz">
+                <div class="mb-3">
+                    <label for="location">Where is the skin concern located?</label><br>
+                    <input type="radio" id="face" name="location" value="Face">
+                    <label for="face">Face</label><br>
+                    <input type="radio" id="arms" name="location" value="Arms">
+                    <label for="arms">Arms</label><br>
+                    <input type="radio" id="legs" name="location" value="Legs">
+                    <label for="legs">Legs</label><br>
+                    <input type="radio" id="torso" name="location" value="Torso">
+                    <label for="torso">Torso</label><br>
+                    <input type="radio" id="hands" name="location" value="Hands">
+                    <label for="hands">Hands</label><br>
+                    <input type="radio" id="feet" name="location" value="Feet">
+                    <label for="feet">Feet</label><br>
+                    <input type="radio" id="otherLocation" name="location" value="Other">
+                    <label for="otherLocation">Other (please specify)</label><br>
+
+                <!-- Add other questions here using similar structure -->
+                <div class="mb-3">
+                    <label for="duration">How long have you had this skin concern?</label><br>
+                    <input type="radio" id="lessThanWeek" name="duration" value="Less than a week">
+                    <label for="lessThanWeek">Less than a week</label><br>
+                    <input type="radio" id="oneToTwoWeeks" name="duration" value="1-2 weeks">
+                    <label for="oneToTwoWeeks">1-2 weeks</label><br>
+                    <input type="radio" id="twoToFourWeeks" name="duration" value="2-4 weeks">
+                    <label for="twoToFourWeeks">2-4 weeks</label><br>
+                    <input type="radio" id="moreThanMonth" name="duration" value="More than a month">
+                    <label for="moreThanMonth">More than a month</label><br>
+                    <input type="radio" id="cantRememberDuration" name="duration" value="Can't remember">
+                    <label for="cantRememberDuration">Can't remember</label><br>
+                  </div>
+                  <div class="mb-3">
+                    <label for="texture">How would you describe the texture of the affected area?</label><br>
+                    <input type="radio" id="dryFlaky" name="texture" value="Dry and flaky">
+                    <label for="dryFlaky">Dry and flaky</label><br>
+                    <input type="radio" id="roughBumpy" name="texture" value="Rough and bumpy">
+                    <label for="roughBumpy">Rough and bumpy</label><br>
+                    <input type="radio" id="smooth" name="texture" value="Smooth">
+                    <label for="smooth">Smooth</label><br>
+                    <input type="radio" id="oilyGreasy" name="texture" value="Oily or greasy">
+                    <label for="oilyGreasy">Oily or greasy</label><br>
+                    <input type="radio" id="scaly" name="texture" value="Scaly">
+                    <label for="scaly">Scaly</label><br>
+                    <input type="radio" id="otherTexture" name="texture" value="Other">
+                    <label for="otherTexture">Other (please specify)</label><br>
+                  </div>
+                <!-- Question 4: Have you experienced any itching or discomfort? -->
+<div class="mb-3">
+    <label for="itching">Have you experienced any itching or discomfort?</label><br>
+    <input type="radio" id="itchingYes" name="itching" value="Yes">
+    <label for="itchingYes">Yes</label><br>
+    <input type="radio" id="itchingNo" name="itching" value="No">
+    <label for="itchingNo">No</label><br>
+  </div>
+  
+  <!-- Question 5: Is the affected area red or inflamed? -->
+  <div class="mb-3">
+    <label for="redness">Is the affected area red or inflamed?</label><br>
+    <input type="radio" id="rednessYes" name="redness" value="Yes">
+    <label for="rednessYes">Yes</label><br>
+    <input type="radio" id="rednessNo" name="redness" value="No">
+    <label for="rednessNo">No</label><br>
+  </div>
+  
+  <!-- Question 6: Have you noticed any swelling or puffiness? -->
+  <div class="mb-3">
+    <label for="swelling">Have you noticed any swelling or puffiness?</label><br>
+    <input type="radio" id="swellingYes" name="swelling" value="Yes">
+    <label for="swellingYes">Yes</label><br>
+    <input type="radio" id="swellingNo" name="swelling" value="No">
+    <label for="swellingNo">No</label><br>
+  </div>
+  
+  <!-- Question 7: Does the skin concern worsen in certain conditions? -->
+  <div class="mb-3">
+    <label for="worsen">Does the skin concern worsen in certain conditions (e.g., sunlight, cold weather)?</label><br>
+    <input type="radio" id="worsenYes" name="worsen" value="Yes">
+    <label for="worsenYes">Yes</label><br>
+    <input type="radio" id="worsenNo" name="worsen" value="No">
+    <label for="worsenNo">No</label><br>
+  </div>
+
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
 </body>
 </html>
